@@ -3,7 +3,7 @@ fun main() {
     val myAmount = Amount(888.57F, "Еда", "12.05.2024")
     val myAmount2 = Amount(45883.12F, "Электроника", "13.06.2023")
     val myAmount3 = Amount(15.12F, "Транспорт", "13.06.2023")
-    val myAmount4 = Amount(207.15F, "Еда", "11.06.2023")
+    val myAmount4 = Amount(207.13F, "Еда", "11.06.2023")
     myAmountsList.addElem(myAmount)
     myAmountsList.addElem(myAmount2)
     myAmountsList.addElem(myAmount3)
