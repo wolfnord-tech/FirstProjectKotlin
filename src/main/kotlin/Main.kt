@@ -14,7 +14,8 @@ fun main() {
         println("1. Поиск по категориям")
         println("2. Поиск по дате")
         println("3. Тесты")
-        print("4. Завершить работу программы\n>> ")
+        println("4. Добавить новую трату")
+        print("5. Завершить работу программы\n>> ")
         choose = readln().toInt()
         when (choose) {
             1 -> {
@@ -31,6 +32,17 @@ fun main() {
                 println(myAmountsList.array[1].printData())
             }
             4 -> {
+                print("Введите категорию:\n>> ")
+                val category: String = readln()
+                print("Введите дату:\n>> ")
+                val date: String = readln()
+                print("Введите трату:\n>> ")
+                val amount: Float = readln().toFloat()
+                val tempAmount = Amount(amount, category, date)
+                myAmountsList.addElem(tempAmount)
+                println("Данные успешно добавлены!")
+            }
+            5 -> {
                 println("\nСпасибо за пользование программой! Желаем вам хорошего времени!")
                 return
             }
